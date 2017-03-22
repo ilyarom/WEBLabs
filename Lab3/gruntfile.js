@@ -21,20 +21,15 @@ module.exports = function(grunt) {
             }
         },
         uglify: {
-            buld: {
+            build: {
                 src: 'build/js/script.js',
                 dest: 'build/js/script.min.js'
             }
         },
         eslint: {
-            target: ['build/js/script.js']
-            //quiet: true
+            target: 'build/js/script.js'
         },
         cssmin: {
-            options: {
-                shorthandCompacting: false,
-                roundingPrecision: -1
-            },
             target: {
                 files: {
                     'build/css/style.min.css': [
@@ -65,8 +60,8 @@ module.exports = function(grunt) {
         },
         clean: {
             script: 'build/js/script.js',
-            js_min:  ['build/js/*.js'],
-            css_min:  ['build/css/*.css']
+            js_min:  'build/js/*.js',
+            css_min:  'build/css/*.css'
         },
 
         hashres: {
@@ -84,10 +79,6 @@ module.exports = function(grunt) {
                 src: 'build/css/style.min.css',
                 dest: 'build/index.html',
             },
-            /*prod: {
-                src: ['.build/js/script.js', '.build/css/style.css'], 
-                dest: 'build/index.html',
-            }*/
         },
         
         copy: {

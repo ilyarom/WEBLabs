@@ -16,6 +16,10 @@ function Clear()
     document.getElementById("arg4_label").style.visibility = "hidden";
     document.getElementById("arg5_label").style.visibility = "hidden";
     document.getElementById("arg6_label").style.visibility = "hidden";
+    document.getElementById("arg7_label").style.visibility = "hidden";
+    document.getElementById("arg8_label").style.visibility = "hidden";
+    document.getElementById("arg7").style.visibility = "hidden";
+    document.getElementById("arg8").style.visibility = "hidden";
     document.getElementById("button").style.visibility = "hidden";
     document.getElementById("arg3_label").innerHTML = "X2";
     ctx.clearRect(0, 0, 700, 500);
@@ -24,6 +28,7 @@ function Clear()
 
 document.getElementById("circle").onclick = function()
 {
+    Clear();
     document.getElementById("arg1").style.visibility = "visible";
     document.getElementById("arg2").style.visibility = "visible";
     document.getElementById("arg3").style.visibility = "visible";
@@ -41,6 +46,7 @@ document.getElementById("circle").onclick = function()
 
 document.getElementById("square").onclick = function()
 {
+    Clear();
     document.getElementById("arg1").style.visibility = "visible";
     document.getElementById("arg2").style.visibility = "visible";
     document.getElementById("arg3").style.visibility = "visible";
@@ -59,6 +65,7 @@ document.getElementById("square").onclick = function()
 
 document.getElementById("triangle").onclick = function()
 {
+    Clear();
     document.getElementById("arg1").style.visibility = "visible";
     document.getElementById("arg2").style.visibility = "visible";
     document.getElementById("arg3").style.visibility = "visible";
